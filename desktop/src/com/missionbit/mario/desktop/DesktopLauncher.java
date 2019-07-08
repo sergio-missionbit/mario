@@ -7,6 +7,11 @@ import com.missionbit.mario.Mario;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+
+		config.width = Mario.WIDTH;
+		config.height = Mario.HEIGHT;
+		config.title = Mario.TITLE;
+
 		new LwjglApplication(new Mario(), config);
 	}
 }
